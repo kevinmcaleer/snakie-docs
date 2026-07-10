@@ -72,8 +72,7 @@ Snakie is a free download. Every version lives on its **Releases** page on GitHu
     !!! tip
         Run the helper again after you download a newer version so the menu points at the new file. To remove the entry, run it with `--uninstall`.
 
-!!! example "📸 Screenshot"
-    _Show: the Snakie welcome screen right after it opens for the first time._
+![Snakie open, with a MicroPython program in the editor](../images/editor.png)
 
 ## Snakie keeps itself up to date
 

@@ -29,8 +29,7 @@ The Board View lives in its own window that floats on top, so you can watch it w
 !!! tip
     Board View reads your code as you type. Change your program and the drawing keeps up — no need to press Run.
 
-!!! example "📸 Screenshot"
-    _Show: the Board View window open beside the editor, with blink.py showing._
+![The Board View drawing a Raspberry Pi Pico next to your code](../images/board-view.png)
 
 ## Find the pin your code uses
 

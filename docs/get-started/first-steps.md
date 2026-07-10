@@ -13,8 +13,7 @@ When Snakie opens, you'll see a few main areas. Here's a map so nothing feels st
 | **Shell / console** | Along the bottom | Shows messages from your board and lets you type commands straight to it. This is the **REPL** — a place where the board reads a line, runs it, and prints the answer. |
 | **Status bar** | The very bottom edge | Small live info, like whether a board is connected. |
 
-!!! example "📸 Screenshot"
-    _Show: the Snakie window on first open, with the editor in the middle, the activity bar on the left, and the shell along the bottom._
+![The Snakie window — the editor in the middle, the activity bar on the left, and the console at the bottom](../images/editor.png)
 
 Take a moment to click around the activity bar. Looking is completely safe — nothing runs until you tell it to.
 

@@ -13,8 +13,7 @@ The Board View draws a picture of your real MicroPython board and lights up the 
 
 Snakie already knows lots of boards, like the Raspberry Pi Pico 2 W, ESP32, and several Pimoroni boards. See the full list on the [Supported boards](../reference/supported-boards.md) page.
 
-!!! example "📸 Screenshot"
-    _Show: the Board View with a Raspberry Pi Pico drawn and two pins highlighted._
+![The Board View drawing a Raspberry Pi Pico next to your code](../images/board-view.png)
 
 Here is a tiny program to try. It blinks the onboard LED:
 

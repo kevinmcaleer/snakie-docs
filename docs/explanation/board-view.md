@@ -10,8 +10,7 @@ When you wire up a board, it is easy to lose track of which pin does what. Was t
 
 The Board View answers those questions for you. It reads your program and turns it into a clear, labelled diagram of the real board, so you can *see* your wiring instead of holding it all in your head.
 
-!!! example "📸 Screenshot"
-    _Show: the Board View window with a node graph of pins in use beside a picture of a Raspberry Pi Pico._
+![The Board View: your code on the left, the drawn board on the right](../images/board-view.png)
 
 ## How it works
 

@@ -20,8 +20,7 @@ Welcome to your very first MicroPython program! In this tutorial you will make a
 2. Plug your board into your computer with the USB cable.
 3. Connect to the board so Snakie can talk to it. (Full details are in [Connect your board](../guides/connect-board.md).)
 
-!!! example "📸 Screenshot"
-    _Show: Snakie open with a Raspberry Pi Pico plugged in and connected._
+![The blink program in the Snakie editor, ready to Run](../images/editor.png)
 
 ## Step 2: Type the blink program
 

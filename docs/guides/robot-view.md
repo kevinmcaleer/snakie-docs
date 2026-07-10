@@ -12,8 +12,7 @@ The Robot View is a 3-D space where you can build a robot from simple blocks or 
 
 A robot is made of **parts** (the shapes) held together by **joints** (the connections between shapes). You will build both.
 
-!!! example "📸 Screenshot"
-    _Show: the empty Robot View with the 3-D grid and the toolbar along the top._
+![The 3-D Robot View with the Chain build panel](../images/robot-view.png)
 
 ## Add a shape
 

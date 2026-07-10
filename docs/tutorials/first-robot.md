@@ -9,8 +9,7 @@ Welcome to the 3‑D Robot View! In this tutorial you will make a tiny robot out
 
 A very simple robot: two blocks joined together, where one block can swing like an arm. Along the way you will learn the main tools in the Robot View. When you finish, jump to the [Robot View guide](../guides/robot-view.md) to go further.
 
-!!! example "📸 Screenshot"
-    _Show: the finished two-block robot in the 3-D view, one block coloured, with the pose slider mid-drag._
+![A robot part in the 3-D Robot View, with the Chain panel](../images/robot-view.png)
 
 ## Step 1 — Open Robot mode
 
