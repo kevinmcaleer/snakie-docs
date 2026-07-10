@@ -1,0 +1,128 @@
+site_name: Snakie
+site_url: https://docs.snakie.org/
+site_description: >-
+  Snakie is a friendly, cross-platform MicroPython editor — write code, talk to
+  your board, see your wiring come alive, and build robots in 3-D.
+site_author: Kevin McAleer
+copyright: Copyright &copy; Kevin McAleer
+
+repo_name: kevinmcaleer/Snakie
+repo_url: https://github.com/kevinmcaleer/Snakie
+edit_uri: https://github.com/kevinmcaleer/snakie-docs/edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/snake
+    repo: fontawesome/brands/github
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kevinmcaleer/Snakie
+      name: Snakie on GitHub
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@kevinmcaleer
+      name: Kevin McAleer on YouTube
+
+nav:
+  - Home: index.md
+  - Get started:
+      - get-started/install.md
+      - Your first steps: get-started/first-steps.md
+  - Tutorials:
+      - tutorials/index.md
+      - Blink an LED: tutorials/blink.md
+      - See your board come alive: tutorials/board-view.md
+      - Plot a sensor live: tutorials/plot-a-sensor.md
+      - Build your first robot: tutorials/first-robot.md
+  - How-to guides:
+      - guides/index.md
+      - Connect to your board: guides/connect-board.md
+      - Run and stop your code: guides/run-and-stop.md
+      - Manage files: guides/manage-files.md
+      - Install a package: guides/install-packages.md
+      - Flash firmware: guides/flash-firmware.md
+      - Find and replace: guides/find-replace.md
+      - Use the instruments: guides/instruments.md
+      - Use the Board View: guides/board-view.md
+      - Add and wire up parts: guides/add-and-wire-parts.md
+      - Make your own part: guides/make-a-part.md
+      - Build a robot in 3-D: guides/robot-view.md
+      - Save your work with Git: guides/version-control.md
+      - Write a plugin: guides/write-a-plugin.md
+      - Change the theme: guides/themes.md
+  - Reference:
+      - reference/index.md
+      - Keyboard shortcuts: reference/shortcuts.md
+      - Instrument telemetry API: reference/telemetry-api.md
+      - parts.yml reference: reference/parts-yml.md
+      - robot.yml reference: reference/robot-yml.md
+      - Supported boards: reference/supported-boards.md
+      - Plugin API: reference/plugin-api.md
+  - Explanation:
+      - explanation/index.md
+      - What is MicroPython?: explanation/what-is-micropython.md
+      - How Snakie talks to your board: explanation/how-snakie-talks-to-your-board.md
+      - The Board View: explanation/board-view.md
+      - The Parts Library: explanation/parts-library.md
+      - The Robot View: explanation/robot-view.md
+      - Themes and skins: explanation/themes.md
