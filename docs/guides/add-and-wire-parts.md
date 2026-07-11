@@ -71,6 +71,12 @@ Some parts need a small helper file on the board to work — called a **driver**
 
 Prefer to do it yourself? See [Install packages](install-packages.md).
 
+!!! tip "See this workflow in action"
+    [Watch drag-a-part and one-click driver installation in Kev's Snakie
+    tour](https://www.kevsrobots.com/blog/what-if-building-robots-with-code-was-actually-easy.html#the-star-move-drag-a-part-in).
+    The demo shows the consent banner and the wiring help that arrives with the
+    driver.
+
 ## Step 5 — Your design is saved
 
 Your parts and wires are stored in a **`robot.yml`** file in your project. That means your whole circuit travels with your code — open the project later and it is all still there.

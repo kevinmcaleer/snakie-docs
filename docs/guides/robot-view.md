@@ -71,6 +71,12 @@ You can save poses and preview a saved pose in the **docked mini viewer**, a sma
 !!! example "📸 Screenshot"
     _Show: joint sliders posing an arm, with the docked mini viewer previewing a saved pose._
 
+## Make it move — servos and animation
+
+Posing by hand is just the start. You can connect a real **servo** to a joint so a running program moves the model, chain poses into **sequences** and **puppet controls**, and test it all live from the **Poses bench**.
+
+That all lives in its own guide: [Bind servos and animate (Motion Studio)](motion-studio.md).
+
 ## Keep your robot self-contained
 
 STL meshes referenced by a robot live in a `meshes/` folder next to your project. When Snakie offers to **copy meshes into the project**, say yes — this keeps the models and the robot together, so nothing goes missing if you move or share the folder.

@@ -65,3 +65,9 @@ Curious how that chat actually works? Read [How Snakie talks to your board](how-
     MicroPython = small Python. It runs on a microcontroller (a tiny computer on a chip). You add firmware once, then Snakie sends it your code. That is the whole magic.
 
 Now you know what MicroPython is — next, make a light blink in the [Blink tutorial](../tutorials/blink.md). Have fun!
+
+!!! tip "Want a longer learning path?"
+    [Follow Kev's free Learn MicroPython pathway on
+    KevsRobots](https://www.kevsrobots.com/learn/learning_pathways/micropython.html)
+    to continue through the basics, Pico GPIO, sensor projects, robotics, and
+    I2C/SPI communication.

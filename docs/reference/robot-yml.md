@@ -73,6 +73,8 @@ This optional section links your design to a 3-D robot model. Snakie fills it in
 | `defaultPose` | map | Joint values applied when the model loads (degrees or mm). |
 | `poses` | list | Saved named poses, each with a `name` and `values`. |
 | `timeline` | section | A choreographed motion clip (see below). |
+| `sequences` | list | Pose-to-pose sequences (walk cycles) built from saved poses (see below). |
+| `controls` | list | Puppet controls — sliders that blend saved poses (see below). |
 | `mirror` | list | Left↔right joint pairs for symmetric movement. |
 
 ### A `servoJointMap` entry
@@ -96,6 +98,35 @@ Tells Snakie which joint a servo drives, and how the servo's angle maps onto the
 | `loop` | true/false | Repeat the motion. |
 | `fps` | number | Preview/export sample rate (default `20`). |
 | `tracks` | list | One track per joint, each with `joint` and a list of `keys` (`{ t, value }`). |
+
+### A `sequences` entry
+
+A pose-to-pose sequence — a walk cycle or gesture chained from saved poses. (A `timeline` keyframes each joint by hand; a sequence just names the poses to move through.)
+
+| Field | Type | What it does |
+| --- | --- | --- |
+| `name` | text | The sequence name. |
+| `steps` | list | The ordered steps (see below). |
+| `loop` | true/false | Repeat — the last step eases back to the first. |
+| `fps` | number | Preview/export sample rate (default `20`). |
+
+Each **step** names a saved pose and how long to ease into the *next* one:
+
+| Field | Type | What it does |
+| --- | --- | --- |
+| `pose` | text | The saved pose this step is on (a `poses` entry's `name`). |
+| `duration` | number | Seconds to transition to the next step's pose. |
+| `easing` | text | `linear` or `easeInOut` (default `easeInOut`). |
+
+### A `controls` entry
+
+A puppet control — a named slider that smoothly blends two or more saved poses (e.g. frown → neutral → smile, or a stride).
+
+| Field | Type | What it does |
+| --- | --- | --- |
+| `id` | text | Unique id for the control within the project. |
+| `name` | text | The slider's label (e.g. `Look up / Down`). |
+| `poses` | list | The saved-pose names to blend, in order (two or more). Dragging the slider 0 → 1 moves through them. |
 
 ## Annotated example
 
@@ -134,6 +165,18 @@ robot:                       # optional 3-D model
   poses:
     - name: home
       values: { shoulder: 0 }
+    - name: wave
+      values: { shoulder: 60 }
+  sequences:
+    - name: greet          # move home -> wave -> home, looping
+      loop: true
+      steps:
+        - { pose: home, duration: 0.4 }
+        - { pose: wave, duration: 0.4 }
+  controls:
+    - id: ctl-1
+      name: Wave amount    # a slider that blends home <-> wave
+      poses: [home, wave]
 ```
 
 !!! warning

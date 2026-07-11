@@ -82,3 +82,7 @@ Where to go next:
 - [Robot View guide](../guides/robot-view.md) — every tool explained, step by step.
 - [How the Robot View works](../explanation/robot-view.md) — the ideas behind joints, chains and meshes.
 - [Add and wire parts](../guides/add-and-wire-parts.md) — bring in library parts and connect them up.
+- [Build a physical robot with MicroPython on
+  KevsRobots](https://www.kevsrobots.com/learn/micropython_robotics/01_intro.html)
+  — continue from a 3-D model to motors, sensors and autonomous behaviour with a
+  Raspberry Pi Pico.

@@ -1,5 +1,3 @@
-I have enough to write the page accurately.
-
 # Use the instruments
 
 Snakie has three on-screen instruments — an **Oscilloscope**, a **Multimeter** and a **Plotter** — that show live readings from your running program. This page shows you how to turn them on and feed them.
@@ -72,8 +70,28 @@ The `ch=` label is just a name you choose so Snakie knows which instrument a rea
 !!! note
     The telemetry lines are hidden from the shell, so your console stays clean — you only see your own `print()` messages.
 
+## Pose your servos — the Poses bench
+
+Snakie has more than the three reading instruments above. If your robot has servos bound to joints (see [Bind servos and animate](motion-studio.md)), a **Poses** instrument appears — a live test bench for the servos.
+
+It lists your saved **poses** as buttons and each bound servo as a **slider**:
+
+- **Press a pose** and every servo eases smoothly into it.
+- **Drag a slider** to nudge one servo by hand.
+
+Both move the on-screen 3-D model **instantly, with no program running** — so it's the quickest way to check a servo turns the right way. With a small program servicing the control channel, the **real servos** follow too.
+
+!!! tip "Testing the hardware"
+    To drive the physical servos from the Poses bench, run the little `inst.start()` + `inst.control.poll()` listener shown in [Bind servos and animate](motion-studio.md#drive-the-real-servos). The 3-D model doesn't need it.
+
+!!! example "📸 Screenshot"
+    _Show: the Poses bench with pose buttons across the top and a slider per servo, next to the 3-D robot mid-pose._
+
 ## Where next
 
 - [Telemetry API reference](../reference/telemetry-api.md) — every helper and its exact usage.
 - [Plot a sensor](../tutorials/plot-a-sensor.md) — a step-by-step first project.
 - [How Snakie talks to your board](../explanation/how-snakie-talks-to-your-board.md) — the serial connection behind it all.
+- [See the live instruments demonstrated in Kev's Snakie
+  tour](https://www.kevsrobots.com/blog/what-if-building-robots-with-code-was-actually-easy.html#the-instrument-panel--seeing-the-feedback-loop)
+  — watch a rangefinder, IMU, multimeter and buzzer feed live readings into Snakie.

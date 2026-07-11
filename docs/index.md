@@ -15,6 +15,12 @@ Snakie also does some things most code editors can't:
 - 🧩 It has a **Parts Library** so you can drop in sensors and motors and wire them up.
 - 🤖 It has a **3-D Robot View** where you can build a robot from parts and pose it.
 
+!!! tip "See Snakie in action"
+    [Watch two Snakie demos and read Kev's full feature tour on
+    KevsRobots](https://www.kevsrobots.com/blog/what-if-building-robots-with-code-was-actually-easy.html).
+    It shows the live instruments, Board View and drag-a-part workflow on real
+    hardware, plus practical gotchas that are easier to understand on video.
+
 It runs on **Windows, macOS and Linux** (including the Raspberry Pi).
 
 <div class="grid cards" markdown>

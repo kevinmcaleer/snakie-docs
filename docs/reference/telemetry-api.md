@@ -107,4 +107,4 @@ The `SNK` marker does three jobs: it **routes** the line to the correct instrume
 !!! example "📸 Screenshot"
     _Show: a running program printing telemetry while the Oscilloscope, Multimeter and Plotter update side by side._
 
-The same library also includes helpers for robotics (orientation, distance, buttons, encoders, small displays) and an IDE-to-board control channel. Those are beyond this core reference — see the [Instruments guide](../guides/instruments.md) to explore them.
+The same library also includes helpers for robotics (orientation, distance, buttons, encoders, small displays) and an IDE-to-board **control channel** — the path the Poses bench uses to drive your servos. Those are beyond this core reference; to explore them see the [Instruments guide](../guides/instruments.md), the [snakie module](snakie-module.md) (the hardware classes `Servo`, `Buzzer`, `Led`), and [Bind servos and animate](../guides/motion-studio.md).

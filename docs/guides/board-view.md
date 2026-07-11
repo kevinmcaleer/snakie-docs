@@ -79,3 +79,6 @@ Using a board Snakie doesn't know yet? Open the **Board Creator** to design your
 - [How the Board View reads your code](../explanation/board-view.md) — the story behind the highlights.
 - [Add and wire parts](add-and-wire-parts.md) — build a full circuit on screen.
 - [Supported boards](../reference/supported-boards.md) — check your board is in the list.
+- [Watch the Board, Breadboard and Schematic views in Kev's Snakie
+  tour](https://www.kevsrobots.com/blog/what-if-building-robots-with-code-was-actually-easy.html#the-board-breadboard-and-schematic-viewer)
+  — see the visual workflow demonstrated on real hardware.
