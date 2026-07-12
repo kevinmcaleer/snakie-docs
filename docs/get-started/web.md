@@ -28,9 +28,38 @@ Just open **[app.snakie.org](https://app.snakie.org)** and click **Connect** on 
 type a program, and press **Run**.
 
 !!! note "Which browser?"
-    The simulator and editor work in any modern browser. **Opening a folder** to
-    edit files on your computer needs a **Chromium-based** browser (Chrome, Edge,
-    or a Chromebook's browser). Safari and Firefox can still use everything else.
+    The simulator and editor work in any modern browser. **Opening a folder** and
+    **connecting a real board** need a **Chromium-based** browser (Chrome, Edge, or
+    a Chromebook's browser). Safari and Firefox can still use everything else.
+
+## Connect a real board over USB
+
+On a Chromium browser you can plug a **real** MicroPython board (a Raspberry Pi
+Pico, an ESP32, and friends) into USB and use it just like the simulator — the
+REPL, **Run**/**Stop**, the device file tree, package installs and the instruments
+all work over the board.
+
+1. Plug the board in.
+2. In the port dropdown (top of the shell) choose **＋ Connect a USB board** and
+   pick your board in the browser's chooser. Boards you've allowed before appear
+   in the list directly next time.
+3. Press **Connect**. Write code, press **Run** — it runs on the real board.
+
+!!! tip "Chromebooks in a classroom"
+    School admins can pre-approve Snakie so students get **no permission prompt**,
+    via the Google Admin console policy
+    [`SerialAllowUsbDevicesForUrls`](https://chromeenterprise.google/policies/#SerialAllowUsbDevicesForUrls).
+    Example (Pico + the common bridge chips):
+
+    ```json
+    [{ "urls": ["https://app.snakie.org"], "devices": [
+      { "vendor_id": 11914 },   // Raspberry Pi (Pico / RP2040)
+      { "vendor_id": 12346 },   // Espressif (native-USB ESP32-S2/S3)
+      { "vendor_id": 4292  },   // Silicon Labs CP210x bridge
+      { "vendor_id": 6790  },   // WCH CH340 bridge
+      { "vendor_id": 1027  }    // FTDI bridge
+    ]}]
+    ```
 
 ## Where your work is saved
 
@@ -43,15 +72,14 @@ type a program, and press **Run**.
 
 ## Online vs. the desktop app
 
-The web version has almost everything. A few things need the desktop app for now:
+The web version has almost everything — including talking to a real board (above).
+A couple of things still need the desktop app:
 
-- Talking to a **real board** over USB.
-- **Flashing** MicroPython firmware onto a board.
+- **Flashing** MicroPython firmware onto a blank board.
 - Installing packages from the network (`mip`).
 
-Connecting real boards from the browser (over Web Serial) is on the roadmap. Until
-then, for hardware work, [install the desktop app](install.md) — it's free for
-macOS, Windows and Linux.
+For those, [install the desktop app](install.md) — it's free for macOS, Windows
+and Linux.
 
 !!! tip "Bookmark it"
     Add **[app.snakie.org](https://app.snakie.org)** to your bookmarks or home
