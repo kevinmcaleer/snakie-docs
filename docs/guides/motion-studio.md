@@ -118,6 +118,21 @@ base = Servo(base_servo, pin=0)
 
 The `pin=0` keeps the servo reporting its angle, so even the exported code still moves the 3-D model when you run it back inside Snakie.
 
+!!! question "Does the export carry my joint limits back into the code?"
+    Yes. The exported angles are **already clamped to your calibration**: Snakie maps
+    each joint value through the servo's range and the joint's `min`/`max` before it
+    writes the number, so the code can't command a servo past a limit you set — you
+    catch bad ranges (and the collisions they cause) in the 3-D model *before* they
+    reach hardware.
+
+    The limit **values** themselves live in your project's
+    [`robot.yml` → `servoJointMap`](../reference/robot-yml.md#a-servojointmap-entry)
+    — `jointMin`/`jointMax`, `servoMin`/`servoMax` and `invert` — the single source of
+    truth that both the Board View and Robot View write, so the calibration stays with
+    the project. When Motion Studio writes your poses into a MicroPython file it also
+    records them in a managed `SNAKIE_SERVOS` block that it reads back, so the whole
+    binding round-trips.
+
 ## See also
 
 - [Build a robot in 3-D](robot-view.md) — make the parts and joints Motion Studio animates.
