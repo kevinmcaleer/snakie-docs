@@ -21,9 +21,20 @@ Snakie also does some things most code editors can't:
     It shows the live instruments, Board View and drag-a-part workflow on real
     hardware, plus practical gotchas that are easier to understand on video.
 
-It runs on **Windows, macOS and Linux** (including the Raspberry Pi).
+It runs on **Windows, macOS and Linux** (including the Raspberry Pi) — or right in
+your **web browser** at **[app.snakie.org](https://app.snakie.org)**, with nothing to
+install ([more on the online version](get-started/web.md)).
 
 <div class="grid cards" markdown>
+
+-   :material-web: **Try it in your browser**
+
+    ---
+
+    No install needed — the whole editor + simulator runs online. Great on a
+    Chromebook.
+
+    [:octicons-arrow-right-24: Open app.snakie.org](https://app.snakie.org)
 
 -   :material-download: **New here? Start here**
 

@@ -92,8 +92,10 @@ extra:
 nav:
   - Home: index.md
   - Snakie website: https://www.snakie.org/
+  - Try Snakie online: https://app.snakie.org/
   - Get started:
       - get-started/install.md
+      - Run it in your browser: get-started/web.md
       - Your first steps: get-started/first-steps.md
   - Tutorials:
       - tutorials/index.md

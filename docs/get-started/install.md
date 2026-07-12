@@ -2,6 +2,13 @@
 
 This page shows you how to put Snakie on your computer. Snakie is a friendly code editor for MicroPython — a small version of the Python programming language that runs on tiny computer boards. Pick your computer type below and follow the steps.
 
+!!! tip "Just want to try it? No install needed."
+    Snakie also runs **in your web browser** at
+    **[app.snakie.org](https://app.snakie.org)** — the editor, the simulator and the
+    3-D Robot View, with nothing to download. It's a great way to start (especially
+    on a Chromebook). See [Snakie in your browser](web.md). Install the desktop app
+    when you want to work with a **real board**.
+
 ## Get the installer
 
 Snakie is a free download. Every version lives on its **Releases** page on GitHub (the website where the app's code is kept).
