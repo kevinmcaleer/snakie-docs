@@ -18,7 +18,14 @@ Do them in order if you're new:
 !!! tip "Before you start"
     You'll need Snakie installed and (for most tutorials) a microcontroller board
     plugged in. See [Install Snakie](../get-started/install.md) and
-    [Your first steps](../get-started/first-steps.md).
+    [Your first steps](../get-started/first-steps.md). No board? The built-in
+    **simulator** works for lots of it — pick *Simulated device (offline)* in the
+    port list.
+
+!!! note "Lessons inside Snakie too"
+    Snakie also has a built-in **Learn** panel with three ten-lesson courses that
+    sit right beside your code — click the graduation cap in the activity bar.
+    [More about the Learn panel](../get-started/first-steps.md#learn-inside-snakie).
 
 Once you've done a few tutorials and want to do a *specific* job, head to the
 [How-to guides](../guides/index.md).

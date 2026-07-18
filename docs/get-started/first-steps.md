@@ -17,9 +17,25 @@ When Snakie opens, you'll see a few main areas. Here's a map so nothing feels st
 
 Take a moment to click around the activity bar. Looking is completely safe — nothing runs until you tell it to.
 
+## Learn inside Snakie
+
+Snakie has its own built-in lessons, so you don't even have to keep these docs open. Click the **graduation cap** icon near the bottom of the activity bar to open the **Learn** panel. It has three courses, each with ten short lessons:
+
+- 🐣 **First Steps with MicroPython** — your very first programs, no board needed.
+- 🤖 **Build a Robot on the Breadboard** — LEDs, buttons, servos and sensors on the Board View.
+- 🦾 **Build a Robot in 3-D** — make a robot model and pose it in the Robot View.
+
+The lessons sit beside your editor while you follow along, and pressing **Run** connects a device for you automatically.
+
 ## Plug in your board
 
 A **board** is a tiny computer, like a Raspberry Pi Pico. You talk to it over a USB cable.
+
+!!! tip "No board? No problem"
+    You can do everything on this page with **no hardware at all**. In the port
+    list, pick **Simulated device (offline)** — a pretend board that runs real
+    MicroPython right inside Snakie. Read
+    [How the simulator works](../explanation/simulator.md) to see what it can do.
 
 1. Connect your board to your computer with a USB cable.
 2. Find the **Connect** button in the shell header (at the top of the console).

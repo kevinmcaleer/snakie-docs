@@ -32,7 +32,7 @@ install ([more on the online version](get-started/web.md)).
     ---
 
     No install needed — the whole editor + simulator runs online. Great on a
-    Chromebook.
+    Chromebook or an iPad.
 
     [:octicons-arrow-right-24: Open app.snakie.org](https://app.snakie.org)
 
