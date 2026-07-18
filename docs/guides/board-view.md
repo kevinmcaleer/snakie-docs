@@ -46,6 +46,19 @@ The **node graph** shows every connection as a card joined by a line. Each conne
 
 When your board is connected and running, the graph can show **live pin values** too.
 
+## Use it by touch
+
+On a touchscreen (like an iPad), the Board View works with your fingers:
+
+- **Tap** the board or a part to see its pin chips (the little labels that say what each pin can do). Tap somewhere else to hide them again.
+- **Drag** a wire from pin to pin with one finger.
+- **Pinch** with two fingers to zoom in and out; drag with one finger to pan.
+
+!!! note "In the browser too"
+    On [app.snakie.org](https://app.snakie.org), the board icon in the toolbar pops
+    the Board View out into its **own browser window**, just like the desktop app —
+    handy for putting code on one side of the screen and the board on the other.
+
 ## Zoom, rotate, and export
 
 You can move around the drawing and save it to share:

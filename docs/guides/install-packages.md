@@ -13,7 +13,11 @@ A **package** (also called a **library**) is a bundle of ready-made MicroPython 
 
 ## Before you start
 
-You need a board plugged in and connected. If you haven't done that yet, follow [Connect a board](connect-board.md) first. Installing runs on the real board, so it must be awake and connected.
+You need a connected board — a real one **or the simulator**. If you haven't done that yet, follow [Connect a board](connect-board.md) first. Installing writes files to the board, so it must be awake and connected.
+
+!!! note "Works everywhere"
+    The Packages panel works on the desktop app, on real boards connected over
+    USB in the [web app](../get-started/web.md), and on the built-in simulator.
 
 ## Install a package step by step
 
@@ -35,6 +39,19 @@ import ssd1306
 
 !!! tip "No Wi-Fi? No problem"
     A plain Raspberry Pi Pico can't reach the internet on its own. Snakie handles this by downloading the package on your computer and copying the files to the board, so mip works on every board.
+
+## See what's already on your board
+
+The panel's **ON BOARD (/lib)** list shows every package that's really installed on the board right now — read straight from the board's `/lib` folder, with each package's version next to it.
+
+- Click **Uninstall** to remove a package you no longer need.
+- If the registry has a **newer version** of something on your board, Snakie offers an **Upgrade** button right there.
+
+The list refreshes by itself whenever anything installs to the board — even from a different Snakie window.
+
+## Find missing imports
+
+Not sure which packages your project needs? Click **⌕ Scan imports**. Snakie reads every `.py` file in your project and lists any `import` that nothing satisfies — not built into the firmware, not on the board, and not one of your own files. Each missing one gets a one-click install button.
 
 ## Keep an eye on space
 

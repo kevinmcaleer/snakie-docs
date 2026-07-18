@@ -71,6 +71,22 @@ You can save poses and preview a saved pose in the **docked mini viewer**, a sma
 !!! example "📸 Screenshot"
     _Show: joint sliders posing an arm, with the docked mini viewer previewing a saved pose._
 
+## Blow it apart — the exploded view
+
+An **exploded view** is a drawing style where a machine's parts float apart so you can see how they fit together — you've probably seen one in flat-pack furniture instructions.
+
+1. Click the **💥** button on the zoom toolbar. A small panel opens.
+2. Drag the **separation slider** — the parts glide outward from the middle of the robot, and back together again.
+3. Press **▶** to play a smooth out-and-back explosion animation. Tick **orbit** and the camera flies once around the robot while it happens.
+4. Press **🎬** to record the animation as a video file you can share — great for showing off how your robot goes together. (On computers that can't record video, Snakie saves an animated GIF instead.)
+
+!!! example "📸 Screenshot"
+    _Show: the exploded-view panel open, with a robot's parts separated._
+
+## Export a clean URDF
+
+Your robot's 3-D model is described by a **URDF** file (a standard text format for robot models — see [What is URDF?](../explanation/robot-view.md)). Press **⬇ Export URDF** in the build panel to write a clean, tidy copy of the model into your project's `urdf/` folder — handy for sharing, or for using your robot in other tools that read URDF.
+
 ## Make it move — servos and animation
 
 Posing by hand is just the start. You can connect a real **servo** to a joint so a running program moves the model, chain poses into **sequences** and **puppet controls**, and test it all live from the **Poses bench**.
