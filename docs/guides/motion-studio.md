@@ -39,13 +39,17 @@ A fresh binding assumes the servo sweeps `0…180°` onto the joint's full range
 
 A *pose* is a named snapshot of where every joint is — like "home", "wave" or "crouch".
 
-1. Pose the robot by dragging the **joint sliders** until it looks right.
-2. Give the pose a **name** and save it.
+1. In the Build workspace, switch to **Animate** at the top of the 3-D view.
+2. Pose the robot: drag a part, turn a joint with its ring, or use the sliders in the **Joints** panel. Turn on **Mirror** to pose both sides at once.
+3. Press **Save pose** (or `S`). The pose appears on the **pose shelf** as a small picture.
+4. Double-click its name to call it something useful.
+
+Press any card on the shelf to go back to that pose. The **⋯** button on a card can mirror, duplicate, update or delete it. [Pose the robot](robot-view.md#pose-the-robot) covers each of these in detail.
 
 Saved poses become the building blocks for everything below, and each one shows up as a quick button in the Poses bench.
 
 !!! example "📸 Screenshot"
-    _Show: an arm posed with the joint sliders, with a "Save pose" field named "wave"._
+    _Show: an arm posed in Animate mode, with a "wave" card on the pose shelf._
 
 ## Test live with the Poses bench
 
