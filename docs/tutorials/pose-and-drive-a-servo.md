@@ -59,12 +59,14 @@ Try moving the joint. If the **3-D model turns the opposite way** to what you ex
 
 A *pose* is a saved snapshot of where your joints sit. Let's save two so we have something to jump between.
 
-1. Drag the joint's **slider** to a resting position.
-2. Save it as a pose named **`home`**.
-3. Drag the slider to a reaching position.
-4. Save that one as **`reach`**.
+1. Switch to **Animate** using the switch at the top of the 3-D view.
+2. Drag the part to a resting position. (You can also press **Joints** and use the slider.)
+3. Press **Save pose**. A card called "Pose 1" appears on the pose shelf under the 3-D view.
+4. Double-click the name and change it to **`home`**.
+5. Drag the part to a reaching position and press **Save pose** again.
+6. Rename that one **`reach`**.
 
-You now have two named poses stored in your project.
+You now have two named poses stored in your project. Press either card to jump back to it.
 
 ## 5. Test it with the Poses bench
 

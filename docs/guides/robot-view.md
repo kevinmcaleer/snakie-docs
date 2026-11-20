@@ -61,15 +61,42 @@ To detach a part **without deleting the part itself**, delete the **joint**, not
 
 ## Pose the robot
 
-Once parts are joined, you can move them:
+The Build workspace has two modes, and a switch at the top of the 3-D view moves between them:
 
-1. Select a joint or open its controls.
-2. Drag the **joint sliders** to bend, turn, or slide the child part.
+- **Assemble** is for shaping the robot: adding parts and joining them.
+- **Animate** is for posing it and building motion.
 
-You can save poses and preview a saved pose in the **docked mini viewer**, a small window that shows the robot in that pose without disturbing your main scene.
+Once parts are joined, switch to **Animate** and move the robot by hand:
+
+- **Drag a part.** Grab a foot or a hand and pull. The rest of the limb bends to follow, the way a real arm does.
+- **Turn one joint.** Point at a part and a ring appears around its joint. Drag the amber dot on the ring to turn just that joint. A small label shows the angle as you go.
+- **Use the Joints panel.** Press **Joints** for a slider and a number box for every joint, grouped into Body, Left side and Right side.
+
+Three more buttons help while you pose:
+
+- **Mirror** copies what you do on one side to the other, so moving the left leg moves the right leg to match.
+- **Rest** puts every joint back to its starting position.
+- **Undo** and **Redo** step back and forward through your pose changes. `Ctrl+Z` (`Cmd+Z` on a Mac) works too.
+
+### Save poses on the pose shelf
+
+A *pose* is a saved snapshot of where every joint is. In Animate mode, the **pose shelf** sits under the 3-D view and shows each saved pose as a small picture.
+
+1. Pose the robot.
+2. Press **Save pose**, or press `S` on the keyboard. The pose lands on the shelf as "Pose 1", "Pose 2", and so on.
+3. Double-click the name on a card to rename it.
+4. Press a card to put the robot back into that pose.
+
+The **⋯** button on a card has more:
+
+- **Mirror to a new pose** makes the same pose with left and right swapped, so "Step left" gives you "Step right".
+- **Duplicate** makes a copy to tweak.
+- **Update from current** replaces the saved pose with what is on screen now.
+- **Add to timeline at playhead** drops the pose into your animation.
+- **Delete** removes it.
 
 !!! example "📸 Screenshot"
-    _Show: joint sliders posing an arm, with the docked mini viewer previewing a saved pose._
+    _Show: Animate mode with a leg being dragged, the joint ring visible, and three poses on the shelf._
 
 ## Make it move — servos and animation
 
