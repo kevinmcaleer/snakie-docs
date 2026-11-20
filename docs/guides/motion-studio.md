@@ -96,6 +96,33 @@ The **Joint tracks** tab is for fine-tuning: every joint gets its own row of *ke
 !!! example "📸 Screenshot"
     _Show: a four-block walk cycle on the Timeline, one gap being dragged, with onion skin on._
 
+## Render a movie
+
+**Render movie** on the Timeline turns your movement into a movie file you can share. It all happens on your own computer or tablet: nothing is uploaded and there is nothing to pay for.
+
+1. Press **Render movie**. A panel opens with a still preview of the first frame.
+2. Pick the settings you want, or leave them as they are:
+    - **Size**: 720p, 1080p, square, vertical (for phones) or 4K.
+    - **Frame rate** and **Loops**: how smooth it is, and how many times the movement repeats.
+    - **Camera**: *Current view* keeps the angle you are looking from; *Turntable* circles the robot once.
+    - **Look**: *Studio light* or *Studio dark* put the robot on a clean floor with a soft shadow; *Editor* keeps the grid as you see it.
+    - **Quality** and **Format**: **MP4** plays almost everywhere, **WebM** is a good second choice, **GIF** suits a short loop in a chat or a README, and **PNG frames** gives you a zip of pictures for a video editor.
+3. Press **Render**. A bar shows the progress and roughly how long is left. You can cancel at any time.
+4. When it finishes, the movie plays in the panel. **Save movie** keeps the file, **Share** hands it to another app where your device supports that, and **Render again** takes you back to the settings.
+
+**Quick draft** makes a small, fast version, which is handy for checking the movement before a long 4K render.
+
+The movie carries a small "Made with snakie.org" mark in the corner. Switch **Watermark** off in the panel if you would rather not have it.
+
+!!! tip "If a format isn't available"
+    Some browsers can't make every kind of movie. When that happens the panel tells you and offers the nearest format that will work, so you are never left with a button that does nothing.
+
+!!! tip "Nothing to render yet?"
+    A movie needs at least two pose blocks on the Timeline (or some keyframes on Joint tracks). If you press **Render movie** before that, Snakie shows you what to make first.
+
+!!! example "📸 Screenshot"
+    _Show: the Render movie panel with the preview, the settings chips and the Render button._
+
 ## Blend poses with a Perform slider
 
 The **Perform** tab holds sliders you make yourself. Each one smoothly blends two or more poses, so instead of jumping between poses you dial anywhere in between.
