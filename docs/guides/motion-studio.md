@@ -63,27 +63,47 @@ Here's the nice part: the Poses bench drives the **on-screen 3-D model live with
 !!! tip
     The Poses bench sits alongside the Oscilloscope, Multimeter and Plotter. See [Use the instruments](instruments.md) for how to open and dock instruments.
 
-## Chain poses into a sequence
+## Build a movement on the timeline
 
-A *sequence* is a movement built from your saved poses played one after another — a wave, a nod, or a walk cycle.
+The **Timeline** is where poses become movement — a wave, a nod, or a walk cycle. It sits at the bottom of Animate mode. Each pose is a **block**, and the robot moves from one block to the next.
 
-1. Add poses to the sequence in the order they should play.
-2. Give each **step** a **duration** (how long to take getting there) and an **easing** (`linear` for steady, `easeInOut` for a natural glide).
-3. Turn on **loop** to repeat it forever, or leave it off to play once.
+1. Pose the robot and press **Add pose** (or `K`). The pose appears as a block. If it wasn't saved yet, Snakie saves it for you.
+2. Pose the robot differently and press **Add pose** again. Now there are two blocks with a **gap** between them.
+3. Press **Play** (or `Space`) to watch the robot move from one to the other.
 
-Press play to preview the sequence against the 3-D model, or scrub back and forth to check each step.
+The gap between two blocks is how long that move takes. A wider gap is a slower move.
+
+- **Drag the handle** at the end of a gap to make the move slower or faster, or press the time to type one.
+- **Press the little curve** in a gap to switch between a *smooth* move (starts and stops gently) and a *steady* one (same speed all the way).
+- **Press a block** to jump to that pose. Drag blocks to reorder them, or use the arrow buttons that appear when a block is selected.
+- Turn on **Loop** to go round again after the last pose.
+
+Two helpers save a lot of work:
+
+- **Make walk cycle** copies your poses to the other side. Pose a step with the left leg, press it, and you get the matching step with the right leg — a full stride.
+- **Onion skin** shows faint copies of the pose before and after the one you are on, so you can see how far each part travels.
+
+!!! tip "Keys"
+    `Space` plays and pauses, `←` and `→` step between blocks, `K` adds the current pose, and `Delete` takes the selected block off the timeline. The saved pose stays on the shelf.
+
+!!! note "Buttons that explain themselves"
+    Nothing on the timeline is greyed out. If you press something that can't run yet — **Play** with only one pose, say, or **Live** with no board connected — Snakie tells you what's missing and what to do next.
+
+### Joint tracks
+
+The **Joint tracks** tab is for fine-tuning: every joint gets its own row of *keyframes* (a value at a moment in time). Most movements never need it. If you made keyframes before, an empty Timeline offers **Turn my keyframes into pose blocks**, which makes a block for each keyed moment and leaves your keyframes as they were.
 
 !!! example "📸 Screenshot"
-    _Show: a "walk" sequence of four pose steps, each with a duration, playing against the model._
+    _Show: a four-block walk cycle on the Timeline, one gap being dragged, with onion skin on._
 
-## Blend poses with a puppet control
+## Blend poses with a Perform slider
 
-A *puppet control* is a single **slider you make** that smoothly blends two or more poses. Instead of jumping between poses, you dial anywhere in between.
+The **Perform** tab holds sliders you make yourself. Each one smoothly blends two or more poses, so instead of jumping between poses you dial anywhere in between.
 
 - Two poses — the slider fades from one to the other (say, a shoulder down → up).
 - Three or more — it blends through them in order (for example **frown → neutral → smile**, or a left → middle → right stride).
 
-Dragging the control moves the model live, so it's perfect for expressive, hand-driven motion.
+Dragging the slider moves the model live, so it's perfect for expressive, hand-driven motion.
 
 ## Drive the real servos
 
