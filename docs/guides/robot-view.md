@@ -68,6 +68,9 @@ The Build workspace has two modes, and a switch at the top of the 3-D view moves
 
 Once parts are joined, switch to **Animate** and move the robot by hand:
 
+!!! tip "Animate says nothing can move?"
+    A **fixed** joint holds two parts rigidly together, so there is nothing to pose. If every joint is fixed, pressing **Animate** shows a card with a button such as **Let arm turn**. Press it and that joint becomes one that turns. You can also select a part in Assemble and change its joint type there.
+
 - **Drag a part.** Grab a foot or a hand and pull. The rest of the limb bends to follow, the way a real arm does.
 - **Turn one joint.** Point at a part and a ring appears around its joint. Drag the amber dot on the ring to turn just that joint. A small label shows the angle as you go.
 - **Use the Joints panel.** Press **Joints** for a slider and a number box for every joint, grouped into Body, Left side and Right side.

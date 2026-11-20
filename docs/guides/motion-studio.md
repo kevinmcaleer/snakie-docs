@@ -63,27 +63,74 @@ Here's the nice part: the Poses bench drives the **on-screen 3-D model live with
 !!! tip
     The Poses bench sits alongside the Oscilloscope, Multimeter and Plotter. See [Use the instruments](instruments.md) for how to open and dock instruments.
 
-## Chain poses into a sequence
+## Build a movement on the timeline
 
-A *sequence* is a movement built from your saved poses played one after another — a wave, a nod, or a walk cycle.
+The **Timeline** is where poses become movement — a wave, a nod, or a walk cycle. It sits at the bottom of Animate mode. Each pose is a **block**, and the robot moves from one block to the next.
 
-1. Add poses to the sequence in the order they should play.
-2. Give each **step** a **duration** (how long to take getting there) and an **easing** (`linear` for steady, `easeInOut` for a natural glide).
-3. Turn on **loop** to repeat it forever, or leave it off to play once.
+1. Pose the robot and press **Add pose** (or `K`). The pose appears as a block. If it wasn't saved yet, Snakie saves it for you.
+2. Pose the robot differently and press **Add pose** again. Now there are two blocks with a **gap** between them.
+3. Press **Play** (or `Space`) to watch the robot move from one to the other.
 
-Press play to preview the sequence against the 3-D model, or scrub back and forth to check each step.
+The gap between two blocks is how long that move takes. A wider gap is a slower move.
+
+- **Drag the handle** at the end of a gap to make the move slower or faster, or press the time to type one.
+- **Press the little curve** in a gap to switch between a *smooth* move (starts and stops gently) and a *steady* one (same speed all the way).
+- **Press a block** to jump to that pose. Drag blocks to reorder them, or use the arrow buttons that appear when a block is selected.
+- Turn on **Loop** to go round again after the last pose.
+
+Two helpers save a lot of work:
+
+- **Make walk cycle** copies your poses to the other side. Pose a step with the left leg, press it, and you get the matching step with the right leg — a full stride.
+- **Onion skin** shows faint copies of the pose before and after the one you are on, so you can see how far each part travels.
+
+!!! tip "Keys"
+    `Space` plays and pauses, `←` and `→` step between blocks, `K` adds the current pose, and `Delete` takes the selected block off the timeline. The saved pose stays on the shelf.
+
+!!! note "Buttons that explain themselves"
+    Nothing on the timeline is greyed out. If you press something that can't run yet — **Play** with only one pose, say, or **Live** with no board connected — Snakie tells you what's missing and what to do next.
+
+### Joint tracks
+
+The **Joint tracks** tab is for fine-tuning: every joint gets its own row of *keyframes* (a value at a moment in time). Most movements never need it. If you made keyframes before, an empty Timeline offers **Turn my keyframes into pose blocks**, which makes a block for each keyed moment and leaves your keyframes as they were.
 
 !!! example "📸 Screenshot"
-    _Show: a "walk" sequence of four pose steps, each with a duration, playing against the model._
+    _Show: a four-block walk cycle on the Timeline, one gap being dragged, with onion skin on._
 
-## Blend poses with a puppet control
+## Render a movie
 
-A *puppet control* is a single **slider you make** that smoothly blends two or more poses. Instead of jumping between poses, you dial anywhere in between.
+**Render movie** on the Timeline turns your movement into a movie file you can share. It all happens on your own computer or tablet: nothing is uploaded and there is nothing to pay for.
+
+1. Press **Render movie**. A panel opens with a still preview of the first frame.
+2. Pick the settings you want, or leave them as they are:
+    - **Size**: 720p, 1080p, square, vertical (for phones) or 4K.
+    - **Frame rate** and **Loops**: how smooth it is, and how many times the movement repeats.
+    - **Camera**: *Current view* keeps the angle you are looking from; *Turntable* circles the robot once.
+    - **Look**: *Studio light* or *Studio dark* put the robot on a clean floor with a soft shadow; *Editor* keeps the grid as you see it.
+    - **Quality** and **Format**: **MP4** plays almost everywhere, **WebM** is a good second choice, **GIF** suits a short loop in a chat or a README, and **PNG frames** gives you a zip of pictures for a video editor.
+3. Press **Render**. A bar shows the progress and roughly how long is left. You can cancel at any time.
+4. When it finishes, the movie plays in the panel. **Save movie** keeps the file, **Share** hands it to another app where your device supports that, and **Render again** takes you back to the settings.
+
+**Quick draft** makes a small, fast version, which is handy for checking the movement before a long 4K render.
+
+The movie carries a small "Made with snakie.org" mark in the corner. Switch **Watermark** off in the panel if you would rather not have it.
+
+!!! tip "If a format isn't available"
+    Some browsers can't make every kind of movie. When that happens the panel tells you and offers the nearest format that will work, so you are never left with a button that does nothing.
+
+!!! tip "Nothing to render yet?"
+    A movie needs at least two pose blocks on the Timeline (or some keyframes on Joint tracks). If you press **Render movie** before that, Snakie shows you what to make first.
+
+!!! example "📸 Screenshot"
+    _Show: the Render movie panel with the preview, the settings chips and the Render button._
+
+## Blend poses with a Perform slider
+
+The **Perform** tab holds sliders you make yourself. Each one smoothly blends two or more poses, so instead of jumping between poses you dial anywhere in between.
 
 - Two poses — the slider fades from one to the other (say, a shoulder down → up).
 - Three or more — it blends through them in order (for example **frown → neutral → smile**, or a left → middle → right stride).
 
-Dragging the control moves the model live, so it's perfect for expressive, hand-driven motion.
+Dragging the slider moves the model live, so it's perfect for expressive, hand-driven motion.
 
 ## Drive the real servos
 
