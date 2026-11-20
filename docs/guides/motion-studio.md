@@ -51,6 +51,27 @@ Saved poses become the building blocks for everything below, and each one shows 
 !!! example "📸 Screenshot"
     _Show: an arm posed in Animate mode, with a "wave" card on the pose shelf._
 
+## Keep a foot planted with Pin
+
+A robot that stands should stay standing while you pose it. **Pin** holds one part still, usually a foot, and lets the rest of the robot move around it.
+
+1. In **Animate**, press **Pin**, then pick the part to keep still. An amber ring marks it.
+2. Pose as usual. Bend the knee or hip of the standing leg and the **body** moves over the foot, instead of the foot swinging into the air.
+3. You can also drag the body itself. The planted leg bends to follow.
+4. Press **Save pose**. The pose remembers where the body is as well as the joints.
+5. Press **Pin** again to let go. To plant the other foot, let go and pin that one.
+
+**Rest** puts the body back where it started, along with every joint.
+
+!!! tip "Walking with Pin"
+    Pin the left foot, pose a step and add each pose to the timeline, then press **Make walk cycle**. Snakie adds the mirror image for the right foot. A looping walk plays **On the spot**, like on a treadmill, so it loops smoothly. Turn **On the spot** off on the timeline to watch the robot travel forward.
+
+!!! question "Does Pin change the code that runs on my robot?"
+    No. Pin only changes how the robot is shown on screen. The servo angles in your poses, and in the exported MicroPython, are exactly the ones you set.
+
+!!! example "📸 Screenshot"
+    _Show: a biped in Animate with one foot pinned (amber ring) and the body leaning over it._
+
 ## Test live with the Poses bench
 
 The **Poses bench** is an on-screen instrument (a little tool in the dock) built for trying things out. It lists every bound servo as a **slider**, and every saved pose as a **button**.
@@ -82,6 +103,7 @@ Two helpers save a lot of work:
 
 - **Make walk cycle** copies your poses to the other side. Pose a step with the left leg, press it, and you get the matching step with the right leg — a full stride.
 - **Onion skin** shows faint copies of the pose before and after the one you are on, so you can see how far each part travels.
+- **On the spot** appears for a looping walk whose poses move the body (made with [Pin](#keep-a-foot-planted-with-pin)). It plays the walk in place. Turn it off to see the robot travel.
 
 !!! tip "Keys"
     `Space` plays and pauses, `←` and `→` step between blocks, `K` adds the current pose, and `Delete` takes the selected block off the timeline. The saved pose stays on the shelf.
