@@ -106,6 +106,7 @@ nav:
       - Pose and drive a servo: tutorials/pose-and-drive-a-servo.md
   - How-to guides:
       - guides/index.md
+      - Start, open and share a project: guides/projects.md
       - Connect to your board: guides/connect-board.md
       - Run and stop your code: guides/run-and-stop.md
       - Manage files: guides/manage-files.md

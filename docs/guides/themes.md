@@ -13,8 +13,7 @@ The theme setting is in the **Settings** window, on the **Appearance** tab.
 
 That's it! The whole app changes straight away, and your choice is saved automatically — Snakie remembers it next time you open it.
 
-!!! example "📸 Screenshot"
-    _Show: the Settings window open on the Appearance tab, with the Light and Dark theme buttons._
+![The Settings window on the Appearance tab, with the Light and Dark theme buttons](../images/settings-appearance.png)
 
 ## The two themes
 

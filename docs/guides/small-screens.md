@@ -24,6 +24,8 @@ Tapping the grip steps through the same three heights. On a minimised sheet, tap
 
 ## 640 px and below: phones
 
+![Snakie on a phone: the code fills the screen, a small board peeks over it, and the Console, Board and Instruments sheet sits below](../images/phone.png){ width="320" }
+
 On a phone, Snakie goes a step further:
 
 - The activity bar folds into the **☰** menu.

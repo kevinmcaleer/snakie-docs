@@ -10,7 +10,7 @@ When you wire up a board, it is easy to lose track of which pin does what. Was t
 
 The Board View answers those questions for you. It reads your program and turns it into a clear, labelled diagram of the real board, so you can *see* your wiring instead of holding it all in your head.
 
-![The Board View: your code on the left, the drawn board on the right](../images/board-view.png)
+![The Electronics workspace: the board drawn on the breadboard, with the Browser on the left and the parts Library on the right](../images/board-view.png)
 
 ## How it works
 

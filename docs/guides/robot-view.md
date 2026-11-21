@@ -5,14 +5,18 @@ The Robot View is a 3-D space where you can build a robot from simple blocks or 
 !!! tip "New here?"
     If this is your first robot, start with the [First robot tutorial](../tutorials/first-robot.md). This page is the deeper how-to. To understand *why* the Robot View works the way it does, see [How the Robot View works](../explanation/robot-view.md).
 
-## Open Robot mode and start a new robot
+## Open Build and start a new robot
 
-1. Open the **Robot View** window.
-2. Choose **New robot** to start with an empty scene. You will see a 3-D grid you can spin and zoom with your mouse.
+1. Click **Build** in the workspace switcher at the top of the window.
+2. Until your project has a robot, Snakie shows a demo arm and a **Start your own robot** card. Choose **New robot** to start with an empty scene, **Open URDF…** to bring in a robot you already have, or **Design it in BetterCAD** to design one there. You will see a 3-D grid you can spin and zoom with your mouse.
+
+![Build with the Start your own robot card over the demo arm](../images/build-empty.png)
+
+Press **×** to tuck the card away; a small **Demo arm · Start your robot** pill brings it back.
 
 A robot is made of **parts** (the shapes) held together by **joints** (the connections between shapes). You will build both.
 
-![The 3-D Robot View with the Chain build panel](../images/robot-view.png)
+![The Build workspace: the Build panel on the left, the tool bar across the top, and the robot in the middle](../images/robot-view.png)
 
 ## Add a shape
 
@@ -98,8 +102,7 @@ The **⋯** button on a card has more:
 - **Add to timeline at playhead** drops the pose into your animation.
 - **Delete** removes it.
 
-!!! example "📸 Screenshot"
-    _Show: Animate mode with a leg being dragged, the joint ring visible, and three poses on the shelf._
+![Animate mode: the Joints panel on the right, Poses and the Timeline along the bottom](../images/animate.png)
 
 ## Blow it apart — the exploded view
 

@@ -67,15 +67,18 @@ In **Breadboard** mode the wires are soft node-RED-style noodles. In **Schematic
 
 ## Step 4 — Let a part bring its driver (optional)
 
-Some parts need a small helper file on the board to work — called a **driver**. If a part you placed needs one, Snakie shows a gentle banner offering to **install the driver** for you. Nothing is copied to your board until you click it, and you need a board connected.
+Some parts need a small helper file on the board to work — called a **driver**. If a part you placed needs one, an amber **Drivers** chip appears beside your file tabs in the Code workspace (and for blocks programs). Tap it and press **Install drivers**. Nothing is copied to your board until you do. If no board is connected, Snakie asks to connect one and installs as soon as it arrives.
 
 Prefer to do it yourself? See [Install packages](install-packages.md).
 
 !!! tip "See this workflow in action"
     [Watch drag-a-part and one-click driver installation in Kev's Snakie
     tour](https://www.kevsrobots.com/blog/what-if-building-robots-with-code-was-actually-easy.html#the-star-move-drag-a-part-in).
-    The demo shows the consent banner and the wiring help that arrives with the
-    driver.
+    The demo shows an older version of the driver prompt and the wiring help
+    that arrives with the driver.
+
+!!! note "Bus servos and their plugs"
+    Some parts show their real connectors on the breadboard. The Feetech **STS3215** bus servo and the Waveshare **Bus Servo Adapter (A)** draw their white servo ports, the UART header and the green DC screw terminal, and in Build they have real 3-D models. If you placed them in a project before they had models, choose **Sync ▸ Upgrade to mesh** in Build to swap the grey boxes for the real shapes.
 
 ## Step 5 — Your design is saved
 

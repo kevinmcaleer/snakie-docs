@@ -5,6 +5,7 @@ around? Pick the job you want to do.
 
 ## Your board
 
+- [Start, open and share a project](projects.md)
 - [Connect to your board](connect-board.md)
 - [Run and stop your code](run-and-stop.md)
 - [Manage files](manage-files.md) — on your computer and on the board

@@ -96,6 +96,8 @@ Paste it into the editor, press **Run**, and watch the little light flash. Press
 
 Snakie updates often. After an update, a small card in the bottom-right corner names the new features once. Press **See what's new** to read them all, or open **What's new in Snakie** from the Help panel any time (in the desktop app, **Help ▸ What's New** in the menu does the same). The features you haven't seen yet are marked **New**.
 
+![The What's new list open from the Help panel](../images/whats-new.png)
+
 When an update is ready, Snakie suggests a reload (on the web) or a restart (on the desktop) instead of interrupting you. Every tab you had open comes back afterwards, unsaved changes included.
 
 ## Where to go next
