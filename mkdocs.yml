@@ -121,6 +121,7 @@ nav:
       - Save your work with Git: guides/version-control.md
       - Write a plugin: guides/write-a-plugin.md
       - Change the theme: guides/themes.md
+      - Snakie on iPad / Chromebook: guides/ipad-chromebook.md
   - Reference:
       - reference/index.md
       - Keyboard shortcuts: reference/shortcuts.md
@@ -134,6 +135,7 @@ nav:
       - explanation/index.md
       - What is MicroPython?: explanation/what-is-micropython.md
       - How Snakie talks to your board: explanation/how-snakie-talks-to-your-board.md
+      - How the simulator works: explanation/simulator.md
       - The Board View: explanation/board-view.md
       - The Parts Library: explanation/parts-library.md
       - The Robot View: explanation/robot-view.md

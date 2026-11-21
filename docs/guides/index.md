@@ -10,6 +10,7 @@ around? Pick the job you want to do.
 - [Manage files](manage-files.md) — on your computer and on the board
 - [Install a package](install-packages.md)
 - [Flash firmware](flash-firmware.md)
+- [Use Snakie on an iPad or Chromebook](ipad-chromebook.md)
 
 ## Writing code
 

@@ -2,7 +2,7 @@
 
 You don't have to install anything to use Snakie. **[app.snakie.org](https://app.snakie.org)**
 is the whole editor, running right in your web browser — perfect for
-**Chromebooks**, school computers, or just trying Snakie in ten seconds.
+**Chromebooks**, **iPads**, school computers, or just trying Snakie in ten seconds.
 
 [Open Snakie online :material-open-in-new:](https://app.snakie.org){ .md-button .md-button--primary }
 
@@ -13,7 +13,11 @@ is the whole editor, running right in your web browser — perfect for
 - 🔭 Watch the on-screen **instruments** (oscilloscope, multimeter, plotter, and
   more) animate from your running program.
 - 🧩 Open the **Board View**, drop in parts from the Standard Library, and see your
-  wiring drawn out.
+  wiring drawn out. The board icon in the toolbar pops it out into its **own browser
+  window**, just like on the desktop.
+- 📦 **Install packages** from the [Packages panel](../guides/install-packages.md) —
+  drivers and modules install to the board's `/lib`, on real boards and on the
+  simulator.
 - 🤖 Build and pose robots in the **3-D Robot View** — run a servo program and watch
   the model move.
 - 📂 **Open a real folder** on your computer and edit + save files straight to disk.
@@ -28,9 +32,17 @@ Just open **[app.snakie.org](https://app.snakie.org)** and click **Connect** on 
 type a program, and press **Run**.
 
 !!! note "Which browser?"
-    The simulator and editor work in any modern browser. **Opening a folder** and
-    **connecting a real board** need a **Chromium-based** browser (Chrome, Edge, or
-    a Chromebook's browser). Safari and Firefox can still use everything else.
+    The simulator and editor work in any modern browser. **Connecting a real
+    board** needs a **Chromium-based** browser (Chrome, Edge, or a Chromebook's
+    browser). Safari and Firefox can still use everything else — on an iPad,
+    Snakie even gives you a built-in **Projects** folder so your work is saved
+    between visits. See [Snakie on an iPad or Chromebook](../guides/ipad-chromebook.md).
+
+!!! tip "Install it like an app"
+    app.snakie.org is a **PWA** (a web page that can behave like an installed
+    app). In Chrome or Edge, look for the **install** icon in the address bar —
+    Snakie then gets its own window and icon, and keeps working even when you're
+    offline (the simulator doesn't need the internet).
 
 ## Connect a real board over USB
 
@@ -66,19 +78,22 @@ all work over the board.
 - Files you **Open Folder** live on *your computer* — Snakie reads and writes them
   directly, so nothing is uploaded anywhere. Your browser remembers the folder
   between visits (you may click once to grant access again).
+- On an **iPad** (which has no folder picker), **Open Folder** gives you a
+  **Projects** folder stored safely inside the browser instead. It's there again
+  every time you come back. More in
+  [Snakie on an iPad or Chromebook](../guides/ipad-chromebook.md).
 - The **simulated device** keeps its files in memory only. They reset when you
   reconnect, or when you press **Stop** on a running program — exactly like
   unplugging and re-plugging a board.
 
 ## Online vs. the desktop app
 
-The web version has almost everything — including talking to a real board (above).
-A couple of things still need the desktop app:
+The web version has almost everything — including talking to a real board (above)
+and installing packages. One thing still needs the desktop app:
 
 - **Flashing** MicroPython firmware onto a blank board.
-- Installing packages from the network (`mip`).
 
-For those, [install the desktop app](install.md) — it's free for macOS, Windows
+For that, [install the desktop app](install.md) — it's free for macOS, Windows
 and Linux.
 
 !!! tip "Bookmark it"
