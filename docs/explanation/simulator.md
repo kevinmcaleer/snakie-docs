@@ -18,6 +18,12 @@ On a real board, `from machine import Pin` gives your code control of real metal
 
 The on-screen [instruments](../guides/instruments.md) work with the simulator the same way they work with a real board: your program sends little readings using the telemetry library, and Snakie draws them live. (Curious how that works? See [How Snakie talks to your board](how-snakie-talks-to-your-board.md).)
 
+## CircuitPython code runs too
+
+The simulated board also has CircuitPython's hardware modules: `board`, `digitalio`, `pwmio`, `analogio`, `busio`, `microcontroller` and `supervisor`, plus `time.monotonic()`. They're built on the same pretend pins as `machine`, so a CircuitPython blink or motor sketch runs offline, and the mini board labels `board.GP0`-style pins the way it labels `Pin(0)`.
+
+To switch, tap **MicroPython** in the status bar and choose **CircuitPython**. The help and code suggestions switch with it. See [Get help as you type](../guides/code-help.md#micropython-or-circuitpython).
+
 ## Files live in memory
 
 The simulated board has its own little filesystem, held in memory. You can save files to it, list them, and import them — exactly like a real board's storage. But because it's memory, it **resets when the simulator restarts**: reconnecting, or pressing **Stop** while a program is stuck in a tight loop, gives you a fresh, empty board — just like unplugging a real one and plugging it back in. Keep your programs saved in your project folder, not only on the simulated device.

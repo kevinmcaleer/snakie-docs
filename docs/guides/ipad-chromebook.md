@@ -58,5 +58,6 @@ Being honest: Safari on iPadOS has no Web Serial, so an iPad **can't talk to a r
 ## Where to go next
 
 - [Snakie in your browser](../get-started/web.md) — everything about the web app.
+- [Use Snakie on a phone or small screen](small-screens.md) — how the layout changes on a narrow screen.
 - [How the simulator works](../explanation/simulator.md) — what the pretend board really is.
 - [Your first steps](../get-started/first-steps.md) — a tour of the Snakie window.

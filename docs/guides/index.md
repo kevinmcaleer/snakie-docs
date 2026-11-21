@@ -11,9 +11,12 @@ around? Pick the job you want to do.
 - [Install a package](install-packages.md)
 - [Flash firmware](flash-firmware.md)
 - [Use Snakie on an iPad or Chromebook](ipad-chromebook.md)
+- [Use Snakie on a phone or small screen](small-screens.md)
 
 ## Writing code
 
+- [Get help as you type](code-help.md) — autocomplete, hover help and Go to Definition
+- [Run and open code from a lesson](open-from-a-lesson.md) — the play button and Open in Snakie
 - [Find and replace](find-replace.md)
 - [Save your work with Git](version-control.md)
 - [Change the theme](themes.md)
@@ -28,6 +31,7 @@ around? Pick the job you want to do.
 - [Add and wire up parts](add-and-wire-parts.md)
 - [Make your own part](make-a-part.md)
 - [Build a robot in 3-D](robot-view.md)
+- [Bind servos and animate](motion-studio.md) — poses, the timeline, Pin and Render movie
 
 ## Extend Snakie
 

@@ -15,7 +15,15 @@ When Snakie opens, you'll see a few main areas. Here's a map so nothing feels st
 
 ![The Snakie window — the editor in the middle, the activity bar on the left, and the console at the bottom](../images/editor.png)
 
-Take a moment to click around the activity bar. Looking is completely safe — nothing runs until you tell it to.
+Take a moment to click around the activity bar. Looking is completely safe — nothing runs until you tell it to. Files, Packages and Inspect open beside the Electronics and Build workspaces too, not just beside your code.
+
+On a narrow window, a tablet or a phone the layout changes to fit. See [Use Snakie on a phone or small screen](../guides/small-screens.md).
+
+## A program is waiting for you
+
+The very first time you open Snakie, the editor isn't empty. A short `main.py` is already there: it blinks the board's LED and prints whether it's on or off. Press **Run** and something happens straight away, on a real board or the simulated one.
+
+It's an unsaved tab, so nothing is written to your computer or your board until you save it. Once you edit it, close it or open something else, Snakie won't show it again.
 
 ## Learn inside Snakie
 
@@ -83,6 +91,12 @@ while True:
 ```
 
 Paste it into the editor, press **Run**, and watch the little light flash. Press **Stop** when you've seen enough.
+
+## What's new
+
+Snakie updates often. After an update, a small card in the bottom-right corner names the new features once. Press **See what's new** to read them all, or open **What's new in Snakie** from the Help panel any time (in the desktop app, **Help ▸ What's New** in the menu does the same). The features you haven't seen yet are marked **New**.
+
+When an update is ready, Snakie suggests a reload (on the web) or a restart (on the desktop) instead of interrupting you. Every tab you had open comes back afterwards, unsaved changes included.
 
 ## Where to go next
 
