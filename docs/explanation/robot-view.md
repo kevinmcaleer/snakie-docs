@@ -13,7 +13,7 @@ Two words do most of the work:
 
 Put simply: **links are the bones, and joints are the connections between them.**
 
-![The 3-D Robot View showing a robot part and its Chain](../images/robot-view.png)
+![The Build workspace showing the demo arm and its chain of parts](../images/robot-view.png)
 
 ## Joints: fixed or movable
 

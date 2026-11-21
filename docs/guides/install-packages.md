@@ -39,8 +39,7 @@ You can start an install, switch tab to look at something, and come back. The in
 
 Snakie runs mip on your board and shows you a live log of what's happening. When it finishes, the row says **INSTALLED**, the library shows up on the **On this board** tab, and you can `import` it in your code straight away.
 
-!!! example "📸 Screenshot"
-    _Show: the Get libraries tab with a search result and its Install button._
+![The Packages panel on the Get libraries tab, with the search box and popular libraries](../images/get-libraries.png)
 
 ```python
 # After installing the ssd1306 package you can import it:
@@ -52,7 +51,7 @@ import ssd1306
     A plain Raspberry Pi Pico can't reach the internet on its own. Snakie handles this by downloading the package on your computer and copying the files to the board, so mip works on every board.
 
 !!! note "No board connected yet?"
-    You can still search and browse everything. To install, connect a board (or the simulator) first. The panel tells you so, and hovering **Install** says *Connect a board first*.
+    You can still search, browse and press **Install**. Snakie asks to connect your board, the row says **WAITING FOR BOARD…**, and the install starts by itself as soon as the board connects. Plug it in and pick it in the console bar.
 
 ## Snakie drivers
 
@@ -66,6 +65,8 @@ Switch to the **On this board** tab. Its **Installed libraries (/lib)** list sho
 
 - Click **Uninstall** to remove a library you no longer need.
 - If the index has a **newer version** of something on your board, an **Upgrade** button appears right there.
+
+![The On this board tab, with the board storage meter and the installed libraries](../images/on-this-board.png)
 
 Below that is every module your code can import, including the ones built into the firmware.
 
@@ -89,14 +90,20 @@ Expand **Advanced options** if you want to:
 
 Most of the time you won't need these, so feel free to skip them.
 
-## Parts can install their own driver
+## The Drivers chip: one place for what's missing
 
-Here's a lovely shortcut. When a part in your project needs a driver, an amber **Drivers** chip appears beside **Find** in the Code workspace. Tap it and a card opens over your code listing each driver, with **Install drivers** and **Show parts**. You don't have to search for anything.
+Here's a lovely shortcut. When something your code needs isn't on the board, an amber **Drivers** chip appears beside your file tabs. It covers everything in one place:
 
-If no board is connected when you press **Install drivers**, Snakie asks you to connect one and installs the drivers as soon as the board arrives.
+- **drivers** for the parts in your project,
+- **board libraries** your code relies on, and
+- **imports** in the open file that nothing on the board satisfies.
+
+It shows in the Code workspace and for blocks programs too. Tap it and a card opens over your code (nothing gets pushed down) listing what's missing, with **Install drivers** and **Show parts**. If an older copy is already on the board, the button says **Update drivers** instead.
+
+If no board is connected when you press it, Snakie asks to connect one and installs as soon as the board arrives.
 
 !!! example "📸 Screenshot"
-    _Show: the amber Drivers chip beside Find, with its card open over the code._
+    _Show: the amber Drivers chip beside the file tabs, with its card open over the code._
 
 To learn about adding parts and connecting them up, see [Add and wire parts](../guides/add-and-wire-parts.md).
 

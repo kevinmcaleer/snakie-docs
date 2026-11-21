@@ -14,8 +14,7 @@ Click the **⚡ Flash firmware** button on the right of the status bar (the stri
 
 Snakie looks for connected boards automatically. Press **⟳ Detect** at any time to scan again after you plug a board in.
 
-!!! example "📸 Screenshot"
-    _Show: the Flash firmware dialog with a detected board and the Board type dropdown open._
+![The Flash MicroPython firmware dialog, with the MicroPython and CircuitPython runtimes, the Board list and the firmware file](../images/flash-firmware.png)
 
 ## 1. Pick your board
 

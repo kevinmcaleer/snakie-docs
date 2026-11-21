@@ -58,6 +58,8 @@ See [Use the Board View](board-view.md) for more on the mini board.
 
 The status bar says which Python you're writing. Tap it (it says **MicroPython** or **CircuitPython**) to switch.
 
+![The MicroPython / CircuitPython menu open from the status bar](../images/runtime-switch.png)
+
 - **On the simulator**, it switches the simulator itself. The help, the suggestions and the Run and Reset wording all switch with it. See [How the simulator works](../explanation/simulator.md).
 - **With nothing connected**, it picks which Python you're writing for.
 - **On a real board**, it sets which Python the help and suggestions teach. It also offers to put the other Python on the board, or to try it on the simulator instead.
